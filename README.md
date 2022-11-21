@@ -1,7 +1,7 @@
 # Colaborações Musicais
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: Grafos<br>
+**Número da Lista**: 9<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
@@ -12,7 +12,7 @@
 ## Sobre
 O objetivo do trabalho foi por em prática os conceitos aprendidos durante o módulo 1 da disciplina de Projeto de Algorítimos, onde foi implementado um algoritmo de busca em grafos para encontrar o menor caminho entre dois nós.
 
-Num primeiro momento foi necessário realizar uma filtragem a partir da base de dados escolhida, considerando apenas as músicas lançadas apenas entre os anos de 2010 e 2020 na plataforma Spotify. Tendo posse das músicas e artistas no formato que foi definido pela dupla, foi iniciada a implementação da estrutura do Grafo.
+Num primeiro momento foi necessário realizar uma filtragem a partir da base de dados escolhida, considerando apenas as músicas com mais de 1.2 milhões de streams e lançadas entre os anos de 2010 e 2020 na plataforma Spotify. Tendo posse das músicas e artistas no formato que foi definido pela dupla, foi iniciada a implementação da estrutura do Grafo.
 
 Foi utilizada uma classe para definir o grafo e as funções utilizadas, principalmente a *BFS_shortest_path()*, que é responsável por encontrar o menor caminho entre dois nós, após obtermos sucesso na implementação, evoluímos o algoritmo para que ele pudesse retornar os três menores caminhos entre dois nós, considerando o número de colaborações entre os artistas.
 
