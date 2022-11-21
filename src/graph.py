@@ -21,6 +21,10 @@ class Graph:
     def BFS_shortest_path(self, node1, node2):
         path_list = [[node1]]
         edge_list = [[]]
+
+        final_artists_path = []
+        final_songs_path = []
+        paths_counter = 0
         
         path_index = 0
         
@@ -40,7 +44,13 @@ class Graph:
                 if node2 == n_node[0]:
                     current_edges.append(n_node[1])
                     current_path.append(n_node[0])
-                    return current_path, current_edges
+                    
+                    final_artists_path.append(current_path)
+                    final_songs_path.append(current_edges)
+                    paths_counter += 1
+
+                    if paths_counter == 3:
+                        return final_artists_path, final_songs_path
             
             # Add new paths
             for next_node in next_nodes:
@@ -63,8 +73,11 @@ class Graph:
             # Continue to next path in list
             path_index += 1
         
-        # No path is found
-        return []
+        
+        if paths_counter > 0:
+            return final_artists_path, final_songs_path  
+        else:
+            return []
 
 
 def main():
