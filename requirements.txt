@@ -1,3 +1,5 @@
-itertools as it
-matplotlib.pyplot as plt
-networkx as nx
+itertools
+matplotlib.pyplot
+networkx
+jupyter
+notebook
